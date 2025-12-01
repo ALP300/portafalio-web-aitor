@@ -26,22 +26,22 @@ export const projects: Project[] = [
     ],
   } satisfies Project,
   {
-    id: "extension-for-vsc",
-    name: "Extension para VSC",
+    id: "go-delivery",
+    name: "Go Delivery",
     description:
-      "Colección de snippets para React, Typescript y Javascript que busca impulsar tu productividad en desarrollo web con atajos modernos.",
+      "Desarrollé desde cero la aplicación móvil 'Go Delivery', una plataforma de entrega de comida a domicilio. Desarrollé interfaces de usuario intuitivas y responsivas, mejorando significativamente la experiencia del usuario final.",
     bannerUrl: "/poster/speed.svg",
-    stackTech: [<VisualStudioCodeIcon />, <JSONIcon />],
+    stackTech: [<TypeScriptIcon />, <TailwindCSSIcon />],
     ctas: [
       {
-        link: "https://github.com/withoutnicks/react-and-js-snippets",
-        text: "Repository",
+        link: "https://play.google.com/store/apps/details?id=com.Go",
+        text: "Play Store",
         variant: "secondary",
-        icon: <CodeIcon />,
+        icon: <ExternalLinkIcon />,
       },
       {
-        link: "https://marketplace.visualstudio.com/items?itemName=wts-dev.wts-react-js-snippets",
-        text: "Store",
+        link: "https://apps.apple.com/pe/app/go-delivery-comida-r%C3%A1pida/id6741622545",
+        text: "App Store",
         variant: "default",
         icon: <ExternalLinkIcon />,
       },
