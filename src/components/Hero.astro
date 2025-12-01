@@ -23,22 +23,17 @@ import LinkButton from "@astro/LinkButton.astro";
     </h1>
     <p class="my-4 font-varela">Desarrollador de aplicaciones web y móvil. Lima, Peru.</p>
     <section class="mx-auto flex flex-col gap-2 sm:flex-row">
-      <Button variant="outline" id="btnCopyEmail">
+      <a
+        href="https://wa.me/51976783049"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+      >
         <EnvelopeClosedIcon className="mr-2" /> Contactar
-      </Button>
+      </a>
       <LinkButton link="/CV_AITORPALOMINO.pdf" variant={"primary"} text="Ver CV" position="left">
         <FileTextIcon />
       </LinkButton>
     </section>
   </div>
 </section>
-
-<script>
-  import { toast } from "sonner";
-  const $btn = document.querySelector("#btnCopyEmail");
-
-  $btn?.addEventListener("click", () => {
-    navigator.clipboard.writeText("gcaycho07@gmail.com");
-    toast("Email copiado en el portapapeles");
-  });
-</script>
