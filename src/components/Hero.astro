@@ -6,22 +6,22 @@ import LinkButton from "@astro/LinkButton.astro";
 ---
 
 <section class="grid h-[92vh] place-content-center place-items-center gap-4 text-center">
-  <div class="relative flex w-full justify-center">
+  <div class="relative flex w-full justify-center items-center">
     <img
       src="leo1.webp"
-      alt="Selfie for my portfolio"
-      class="size-44 rounded-full pointer-events-none"
+      alt="Leonardo Palomino"
+      class="size-44 md:size-56 rounded-full object-cover border-4 border-black transition duration-500 hover:scale-105"
       loading="eager"
     />
   </div>
   <div class="flex flex-col">
     <h1 class="text-4xl font-bold md:text-4xl group cursor-crosshair font-space">
-      hoLa, me llamo <br />
+      Hola, me llamo <br />
       <span class="transition duration-300 ease-in-out group-hover:text-blue-600"
-        >gerardo caycho</span
+        >Leonardo Palomino</span
       >
     </h1>
-    <p class="my-4 font-varela">Desarrollador de aplicaciones web. Lima, Peru.</p>
+    <p class="my-4 font-varela">Desarrollador de aplicaciones web y móvil. Lima, Peru.</p>
     <section class="mx-auto flex flex-col gap-2 sm:flex-row">
       <Button variant="outline" id="btnCopyEmail">
         <EnvelopeClosedIcon className="mr-2" /> Contactar
